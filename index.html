@@ -35,58 +35,240 @@
     <script data-n-head="ssr" data-hid="g_analytics" src="https://www.googletagmanager.com/gtag/js?id=G-E7ZKBJ49XS" async=""></script>
     <meta id="">
 
-
-
+    <style>
+        @media screen and (min-width:1px) {
+            .navbar-2[data-v-f1b18110] {
+                padding: 0;
+                justify-content: space-between
+            }
+            .navbar-right[data-v-f1b18110] {
+                width: auto;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                height: 100%;
+            }
+            .button-account h3[data-v-f1b18110],
+            .button-login h3[data-v-f1b18110] {
+                color: #fff;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0
+            }
+            .button-login[data-v-f1b18110] {
+                background-color: #4d6fb9;
+                border: 3px solid #4d6fb9;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0
+            }
+            .button-account[data-v-f1b18110],
+            .button-login[data-v-f1b18110] {
+                color: #fff;
+                padding: 12px;
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                transition: .3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -ms-transition: .3s;
+                -o-transition: .3s
+            }
+            .button-account[data-v-f1b18110] {
+                background-color: #ff3180;
+                border: 3px solid #ff3180;
+                border-radius: 0;
+                text-align: center;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0
+            }
+            .button-login[data-v-f1b18110]:hover {
+                box-shadow: 0 2px 0 #2d55af
+            }
+            .button-account[data-v-f1b18110]:hover,
+            .button-login[data-v-f1b18110]:hover {
+                transition: .3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -ms-transition: .3s;
+                -o-transition: .3s
+            }
+            .button-account[data-v-f1b18110]:hover {
+                background-color: #ff4d91;
+                border: 3px solid #ff4d91
+            }
+            .link-enter {
+                display: inline-grid;
+                gap: 6px;
+                height: auto;
+                justify-items: center;
+            }
+            .button-enter {
+                display: flex;
+                align-items: center;
+                color: #ffffff;
+            }
+        }
+        
+        @media screen and (min-width:768px) {
+            .navbar-2[data-v-f1b18110] {
+                padding: 8px 0;
+                justify-content: space-between
+            }
+            .navbar-right[data-v-f1b18110] {
+                width: auto;
+                padding: 0 2vw;
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                grid-column-gap: 10px;
+                -moz-column-gap: 10px;
+                column-gap: 10px;
+                height: auto;
+            }
+            .button-login h3[data-v-f1b18110] {
+                color: #2d55af
+            }
+            .button-account h3[data-v-f1b18110],
+            .button-login h3[data-v-f1b18110] {
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0
+            }
+            .button-account h3[data-v-f1b18110] {
+                color: #fff
+            }
+            .button-login[data-v-f1b18110] {
+                background-color: #fff;
+                border: 3px solid #fff;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0
+            }
+            .button-account[data-v-f1b18110],
+            .button-login[data-v-f1b18110] {
+                padding: 6px 12px;
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                transition: .3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -ms-transition: .3s;
+                -o-transition: .3s
+            }
+            .button-account[data-v-f1b18110] {
+                background-color: #ff3180;
+                border: 3px solid #ff3180;
+                border-radius: 6px;
+                text-align: center;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px
+            }
+            .button-login[data-v-f1b18110]:hover {
+                box-shadow: 0 2px 0 #2d55af
+            }
+            .button-account[data-v-f1b18110]:hover,
+            .button-login[data-v-f1b18110]:hover {
+                transition: .3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -ms-transition: .3s;
+                -o-transition: .3s
+            }
+            .button-account[data-v-f1b18110]:hover {
+                /* background-color: #ff4d91;
+                border: 3px solid #ff4d91; */
+                background-color: #ff3180;
+                border: 3px solid #ff3180;
+                padding: 0px 20px;
+            }
+            .link-enter {
+                display: flex;
+                gap: 6px;
+                height: auto;
+                align-items: center;
+            }
+            .button-enter {
+                display: flex;
+                align-items: center;
+                color: #4d6fb9;
+            }
+        }
+        
+        .navbar-2[data-v-f1b18110] {
+            position: fixed;
+            min-height: 55px;
+            width: 100%;
+            z-index: 3;
+            background-color: #fff;
+            box-shadow: 0 5px 10px 0 rgb(0 0 0/5%);
+            display: flex;
+            align-items: center;
+            grid-gap: 10px;
+            gap: 10px;
+            padding-left: 10px;
+        }
+        
+        .navbar-left[data-v-f1b18110] {
+            width: auto;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body cz-shortcut-listen="true">
+
+
     <header class="header" id="js-header">
-        <a class="logo" href="https://tutt.in/" aria-label="tuttin Logo"><img src="./img/marca-tuttin.svg" alt="Tuttin. O mini site dos profissionais liberais " class="logo-img"></a>
-        <nav class="navbar js-navbar"><button class="navbar-toggle" id="js-toggle" aria-label="Menu toggle button"><svg height="24" width="24">
-            <use xlink:href="https://tutt.in./assets/svg/svg-map.svg#menu"></use></svg></button>
-            <ul id="js-navbar-menu" class="navbar-menu">
-                <li><a href="https://marketplace.tutt.in/" target="_self">Themes</a></li>
-                <li><a href="https://tutt.in/customization-service/" target="_self">Services</a></li>
-                <li class="has-submenu"><span>Docs</span>
-                    <ul id="js-navbar-menu" class="navbar-submenu">
-                        <li><a href="https://tutt.in/docs/" target="_self">For Users</a></li>
-                        <li><a href="https://tutt.in/dev/" target="_self">For Developers</a></li>
-                    </ul>
-                </li>
-                <li class="hidden-item has-submenu"><span>Support</span>
-                    <ul id="js-navbar-menu" class="navbar-submenu">
-                        <li><a href="https://forum.tutt.in/" target="_self">Free Support</a></li>
-                        <li><a href="https://marketplace.tutt.in/log-in/" target="_self" rel="nofollow">Premium Support</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://tutt.in/blog/">Blog</a></li>
-                <li class="navbar__menu__donate"><a href="https://tutt.in/donate/">Donate</a></li>
-            </ul>
-        </nav><a href="https://github.com/Gettuttin/tuttin" class="btn outline with-icon github-btn" aria-label="Github" title="Visit tuttin on Github"><i data-feather="user"></i>Entrar</a>
-        <a href="https://tutt.in/download/" class="btn with-icon" aria-label="Download tuttin CMS" title="Downlaod tuttin CMS"><i data-feather="gift"></i>Experimentar grátis por 1 Mês</a>
+        <div class="navbar-left" data-v-f1b18110=""><svg xmlns="http://www.w3.org/2000/svg" id="Camada_1" data-name="Camada 1" viewBox="0 0 1233 288" height="32px" class="logo" data-v-f1b18110=""><path fill="#2a4d9b" d="M193,105.14V72.22H154.92V234h36.59v41.62H54.1V234H91.34V72.22H54.1v32.92H12.47V31H234.28v74.14Z" data-v-f1b18110=""></path><path fill="#2a4d9b" d="M362.09,199.49V144.75H335.91v-40H416.4V234l30.16-.13v41.65l-84.47.13v-17.3q-25.53,16.9-49.6,16.91-24.87,0-38.7-13.83T260,223.38V144.75H234.28v-40H314v94.74C314,233.78,362.09,233.92,362.09,199.49Z" data-v-f1b18110=""></path><path fill="#2a4d9b" d="M1090.8,180.91v54.74H1117v40h-80.49V146.4l-30.16.13V104.88l84.47-.13v17.31q25.53-16.92,49.6-16.91,24.88,0,38.7,13.82T1192.92,157v78.63h25.7v40h-79.68V180.91C1138.94,146.62,1090.8,146.48,1090.8,180.91Z" data-v-f1b18110=""></path><polygon fill="#2a4d9b" points="582.84 145.65 582.84 104.97 574.67 104.97 546.15 104.97 546.15 71.91 482.67 71.91 482.67 104.97 446.03 104.97 446.03 145.64 482.67 145.64 482.62 275.56 582.84 275.56 582.84 233.93 546.25 233.93 546.25 145.64 582.84 145.65" data-v-f1b18110=""></polygon><polygon fill="#2a4d9b" points="749.65 145.65 749.65 104.97 741.47 104.97 712.96 104.97 712.96 71.91 649.48 71.91 649.48 104.97 612.84 104.97 612.84 145.64 649.48 145.64 649.43 275.56 749.65 275.56 749.65 233.93 713.06 233.93 713.06 145.64 749.65 145.65" data-v-f1b18110=""></polygon><polygon fill="#2a4d9b" points="869.52 234.82 869.52 275.49 1006.33 275.49 1006.33 234.83 969.7 234.83 969.74 104.91 869.52 104.91 869.52 146.54 906.11 146.54 906.11 234.83 869.52 234.82" data-v-f1b18110=""></polygon><path fill="#2a4d9b" d="M839.65,245.57q0,13-8.86,21.55a29.32,29.32,0,0,1-21.06,8.53,29.9,29.9,0,1,1,29.92-30.08Z" data-v-f1b18110=""></path><path fill="#2a4d9b" d="M967.93,60.92q0,13-8.86,21.55A29.33,29.33,0,0,1,938,91a29,29,0,0,1-21.22-8.87,28.93,28.93,0,0,1-8.86-21.22,28.76,28.76,0,0,1,8.86-21.06,29.65,29.65,0,0,1,42.28,0A28.76,28.76,0,0,1,967.93,60.92Z" data-v-f1b18110=""></path></svg></div>
+        <ul class="navbar-right" data-v-f1b18110="">
+            <li class="button-login" data-v-f1b18110="">
+                <a href="https://tutt.in/login" data-v-f1b18110="" class="link-enter">
+                    <div class="button-enter">
+                        <i data-feather="user"></i>
+                    </div>
+                    <h3 data-v-f1b18110="" style="vertical-align: bottom;">Entrar</h3>
+                </a>
+            </li>
+            <li class="button-account" data-v-f1b18110="">
+                <a href="https://tutt.in/newAccount" data-v-f1b18110="" class="">
+                    <h3 data-v-f1b18110="">Criar conta</h3>
+                </a>
+            </li>
+        </ul>
     </header>
+
     <main>
         <section class="section blue hero">
-
             <div class="inner">
                 <h1>Tuttin. O mini site para profissionais liberais</h1>
-                <h2 class="hero-desc">Pare de dispediçar dinheiro com sites complicados, que você não usa nem metade das "ferramentas" e ainda paga por hospedagem e suporte. Venha pra Tuttin e tenha sua presença digital com um site fácil de criar, atualizar e compartilhar.</h2>
+                <h2 class="hero-desc">Pare de desperdiçar dinheiro com sites complicados, que você não usa nem metade das "ferramentas" e ainda paga por hospedagem e suporte. Venha pra Tuttin e tenha sua presença digital com um site fácil de criar, atualizar e compartilhar.</h2>
                 <div class="hero-desc-line">
-                    <h2 class="hero-desc-bold">Seu site mais barato que 2 cafézinho por mês!</h2>
+                    <h2 class="hero-desc-bold">Seu site mais barato que 2 cafézinhos por mês!</h2>
                     <div class="icon-fast"><i data-feather="coffee"></i></div>
                 </div>
                 <div class="fast-link">
-                    <a href="https://tutt.in/download/" class="btn white with-icon">
+                    <a href="https://tutt.in/newAccount" class="btn white with-icon">
                         <i data-feather="gift"></i>
                         <div class="btn-gratis">Experimente grátis por 1 Mês</div>
                     </a>
                     <div class="terms-text">
-                        <p class="hero-version"><small>Após o período de experiência você poderá renovar </small></p>
-                        <p class="hero-version"><small>sua assinatura anual por apenas R$78,60 no crédito, à vista ou pix</small></p>
+                        <p class="hero-version"><small>Após o período de experiência você poderá renovar sua assinatura anual por apenas R$78,60 no crédito, à vista ou pix</small></p>
                     </div>
                     <img src="./img/tutt.in_.png" alt="Tuttin. O mini site dos profissionais liberais " class="shadow hero-image" style="border-radius: 5px;" width="1398" height="761">
-                    <!-- <img src="//tuttin-cms.svg" alt="Tuttin. O mini site dos profissionais liberais " class="shadow hero-image" width="1398" height="761"> -->
-
                 </div>
             </div>
 
@@ -95,7 +277,7 @@
         <section class="section websites">
             <div class="inner center">
                 <h2>Muito mais que um site, seu cartão de visitas digital</h2>
-                <p class="section-desc">Os assinantes da Tuttin tem muito mais que um site! Criamos uma plataforma que permite que seu site apareça mais fácilmento no google, além disso, nossa tecnologia permite que seu site vire um cartão de visitas digital, facil de compatilhar
+                <p class="section-desc">Os assinantes da Tuttin tem muito mais que um site! Criamos uma plataforma que permite que seu site apareça mais facilmente no google, além disso, nossa tecnologia permite que seu site vire um cartão de visitas digital, fácil de compatilhar
                     com whatsapp® e outras redes sociais usando apenas o link. </p>
             </div>
             <div class="websites-showcase">
@@ -128,7 +310,7 @@
                 </section>
                 <section><i class="icon-lrg" data-feather="grid"></i>
                     <h3>Todos os seus contatos com telefones, emails, redes sociais e links úteis em seu perfil</h3>
-                    <p>Você pode inserir infinitos links no seu mini site da Tuttin, na hora que você quiser, sem precisar pagar nada por isso e sem abrir chamados, de uma forma intuitiva e istantaneamente.</p>
+                    <p>Você pode inserir infinitos links no seu mini site da Tuttin, na hora que você quiser, sem precisar pagar nada por isso e sem abrir chamados, de uma forma intuitiva e instantaneamente.</p>
                 </section>
                 <section><i class="icon-lrg" data-feather="dollar-sign"></i>
                     <h3>Assinatura com valor baixo e fixo, um ano inteiro sem surpresas</h3>
@@ -137,7 +319,7 @@
             </div>
 
             <div class="buy-button center">
-                <a href="https://tutt.in/download/" class="bg-blue btn with-icon">
+                <a href="https://tutt.in/newAccount" class="bg-blue btn with-icon">
                     <i data-feather="gift"></i>
                     <div class="btn-gratis">Experimente grátis por 1 Mês</div>
                 </a>
@@ -147,234 +329,60 @@
         <section class="section testimonials">
             <div class="inner center">
                 <h2>O que as pessoas estão dizendo ...</h2>
-                <p class="section-desc small">Barato, rápido e intuitivo, Tuttin é o mini site para profissionais que querem ter presença digital. Deixe nossos usuários dizerem por que vale a pena assinar e usar a Tuttin.</p>
+                <p class="section-desc small">Barato, rápido e intuitivo, Tuttin é o mini site para profissionais que querem ter presença digital. Deixe nossos usuários dizerem porque vale a pena assinar e usar a Tuttin.</p>
             </div>
             <div class="testimonials-container">
-                <!-- <blockquote>
-                    <a href="linkhere/emile_hay/status/894302244295802881" rel="nofollow noopener" target="_blank">
-                        <h3>...the interface is fire....</h3>
-                        <p>I've been interested in static sites for a while now. tuttin just caught my eye. The interface is fire. Even non-devs can rock this!</p>
-                        <footer><img src="//emile-hay.jpg" loading="lazy" width="24" height="24" alt="" class="is-loaded">Emile Hay</footer>
-                    </a>
-                </blockquote> -->
-                <!-- <blockquote>
-                    <a href="linkhere/niqabicodermum/status/894156165210402818" rel="nofollow noopener" target="_blank">
-                        <h3>...maintain a static site easily...</h3>
-                        <p>This looks a great. Even the non-tech people who felt intimidated by static site generators will be able to maintain a static site easily.</p>
-                        <footer><img src="//naveera.jpg" loading="lazy" width="24" height="24" alt="" class="is-loaded">Naveera</footer>
-                    </a>
-                </blockquote> -->
-                <!-- <blockquote>
-                    <a href="linkhere/sarah_federman/status/875144281282854913" rel="nofollow noopener" target="_blank">
-                        <h3>...it's all so intuitive...</h3>
-                        <p>My tech lead on tuttin: "it's all so intuitive... something must be wrong"</p>
-                        <footer><img src="//sarah.jpg" loading="lazy" width="24" height="24" alt="" class="is-loaded">Sarah Federman</footer>
+                <blockquote>
+                    <a href="https://tutt.in/ajuda" rel="nofollow noopener" target="_blank">
+                        <div class="testemunial-img"><img class="testemunial-img-cicle" src="./img/joy.png" loading="lazy" alt="" class="is-loaded"></div>
+                        <div class="textemonial-txt-t">Maria Joaquina</div>
+                        <h3>Tuttin é muito fácil de usar...</h3>
+                        <p>...eu já pensava em ter meu site antes, mas era complicado e tinha um monte de coisa que eu não sabia usar.</p>
                     </a>
                 </blockquote>
                 <blockquote>
-                    <a href="linkhere/DawidMedwediuk/status/953634367582232577" rel="nofollow noopener" target="_blank">
-                        <h3>...friendly and optimized solution...</h3>
-                        <p>A very friendly and optimized solution for creating ultra-fast websites. Best alternative to your slow loaded website.</p>
-                        <footer><img src="//dawid.jpg" loading="lazy" width="24" height="24" alt="" class="is-loaded">Dawid Medwediuk</footer>
+                    <a href="https://tutt.in/ajuda" rel="nofollow noopener" target="_blank">
+                        <div class="testemunial-img"><img class="testemunial-img-cicle" class="" src="./img/moscow.png" loading="lazy" alt="" class="is-loaded"></div>
+                        <div class="textemonial-txt-t">Lola Mariana</div>
+                        <h3>Tão barato que eu nem acredito...</h3>
+                        <p>...fiz uma orçamento para ter um site, acho que com o preço que cobraram dava pra ter Tuttin pro mais de 10 anos.</p>
                     </a>
                 </blockquote>
                 <blockquote>
-                    <a href="linkhere/smashingmag/status/894207811588157440" rel="nofollow noopener " target="_blank">
-                        <h3>...great to see...</h3>
-                        <p>Great to see open source CMS for static websites getting traction. Publi.</p>
-                        <footer><img src="//smashing.jpg" loading="lazy" width="24" height="24" alt="" class="is-loaded">Smashing Magazine</footer>
-                    </a>
-                </blockquote> -->
-                <blockquote>
-                    <a href="linkhere/windowswebdev/status/872597855353098242" rel="nofollow noopener" target="_blank">
-                        <h3>...replaces the tedium of static generator...</h3>
-                        <p>tuttin replaces the tedium of static site generator configuration and coding with themes and a GUI. Interesting.</p>
-                        <footer><img src="//chris.jpg" loading="lazy" width="24" height="24" alt="" class="is-loaded">Chris Salmon</footer>
+                    <a href="https://tutt.in/ajuda" rel="nofollow noopener" target="_blank">
+                        <div class="testemunial-img"><img class="testemunial-img-cicle" src="./img/moscow.png" loading="lazy" alt="" class="is-loaded"></div>
+                        <div class="textemonial-txt-t">Lola Mariana</div>
+                        <h3>Tão barato que eu nem acredito...</h3>
+                        <p>...fiz uma orçamento para ter um site, acho que com o preço que cobraram dava pra ter Tuttin pro mais de 10 anos.</p>
                     </a>
                 </blockquote>
                 <blockquote>
-                    <a href="linkhere/tezjnr/status/894445261430308868" rel="nofollow noopener" target="_blank">
-                        <h3>...really impressed...</h3>
-                        <p>Really impressed and loving the UI and ease of integration with Github.</p>
-                        <footer><img src="//terry.jpg" loading="lazy" width="24" height="24" alt="">Terry Gillespie</footer>
+                    <a href="https://tutt.in/ajuda" rel="nofollow noopener" target="_blank">
+                        <div class="testemunial-img"><img class="testemunial-img-cicle" src="./img/moscow.png" loading="lazy" alt="" class="is-loaded"></div>
+                        <div class="textemonial-txt-t">Lola Mariana</div>
+                        <h3>Tão barato que eu nem acredito...</h3>
+                        <p>...fiz uma orçamento para ter um site, acho que com o preço que cobraram dava pra ter Tuttin pro mais de 10 anos.</p>
                     </a>
                 </blockquote>
                 <blockquote>
-                    <a href="linkhere/ttwatrader/status/961654616936079360" rel="nofollow noopener" target="_blank">
-                        <h3>...great idea with a beautiful design...</h3>
-                        <p>I found @Gettuttin by accident. It inspired me from the beginning. I find the idea, the design and the easy handling very coherent. The how-to-descriptions are very precise and easy to understand.</p>
-                        <footer><img src="//ttwatrader.jpg" loading="lazy" width="24" height="24" alt="">ttwatrader</footer>
-                    </a>
-                </blockquote>
-                <blockquote>
-                    <a href="linkhere/Jack_Mangano/status/997595867967311872" rel="nofollow noopener" target="_blank">
-                        <h3>...I love your software...</h3>
-                        <p>@Gettuttin I love your software so much that i decided that i should do this...</p>
-                        <footer><img src="//jack.jpg" loading="lazy" width="24" height="24" alt="">NavJack27</footer>
-                    </a>
-                </blockquote>
-                <blockquote>
-                    <a href="linkhere/karanganesan/status/955482143123152896" rel="nofollow noopener" target="_blank">
-                        <h3>...is amazing...</h3>
-                        <p>tuttin is amazing. I just created my first blog with it !</p>
-                        <footer><img src="//karan.jpg" loading="lazy" width="24" height="24" alt=""> Karan Ganesan</footer>
+                    <a href="https://tutt.in/ajuda" rel="nofollow noopener" target="_blank">
+                        <div class="testemunial-img"><img class="testemunial-img-cicle" src="./img/moscow.png" loading="lazy" alt="" class="is-loaded"></div>
+                        <div class="textemonial-txt-t">Lola Mariana</div>
+                        <h3>Tão barato que eu nem acredito...</h3>
+                        <p>...fiz uma orçamento para ter um site, acho que com o preço que cobraram dava pra ter Tuttin pro mais de 10 anos.</p>
                     </a>
                 </blockquote>
             </div>
         </section>
-
-        <!-- 
-        <section class="section dark editors">
-            <div class="inner center">
-                <h2>Three post editors for an intuitive writing experience</h2>
-                <p class="section-desc small">Whatever you're writing, our app is equipped to make the process smooth and comfortable. Take full control of your page with the Block editor, get technical with Markdown, or stick with the familiar, dependable WYSIWYG editor; the choice
-                    is yours.</p>
-                <div class="editors-links h3"><a href="https://tutt.in/docs/post-editor.html">WYSIWYG </a><a href="https://tutt.in/docs/the-block-editor.html">Block</a> <a href="https://tutt.in/docs/the-markdown-editor.html">Markdown</a></div><img src="//editors.png"
-                    loading="lazy" alt="tuttin three post editors" height="1398" width="1030" class="is-loaded"></div>
-        </section>
-
-        <section class="section gray seo">
-            <div class="inner">
-                <figure class="seo-left"><img src="//tuttin-amp-page.jpg" loading="lazy" alt="tuttin AMP Themes" height="768" width="352" class="seo-img shadow is-loaded"> <img src="//tuttin-amp-category.jpg"
-                        loading="lazy" alt="tuttin AMP Themes" height="686" width="207" class="seo-img shadow is-loaded">
-                    <figcaption>* Automatically generated AMP version of all pages</figcaption>
-                </figure>
-                <div class="seo-right">
-                    <h2>Search engines will love your website</h2>
-                    <p class="section-desc small">There's not much point in writing a bunch of posts if no-one gets to see them; tuttin is packed with advanced SEO options to help you climb search engine rankings and get noticed.</p>
-                    <div class="seo-features">
-                        <ul class="seo-features-list">
-                            <li>
-                                <h3>Structured Data Markup</h3>
-                                <p>tuttin provides a ton of useful data for search engines (in JSON-LD format), so that your site's search results will be informative and clear.</p>
-                            </li>
-                            <li>
-                                <h3>Metatags</h3>
-                                <p>Add meta content to all your pages, from posts to author bios, so search engines know what your content's about.</p>
-                            </li>
-                            <li>
-                                <h3>Open Graph Support</h3>
-                                <p>Fine-tune your articles' social media presence to maximize your shares.</p>
-                            </li>
-                            <li>
-                                <h3>Accelerated Mobile Pages (AMP)</h3>
-                                <p>Generate ultra-fast, mobile-friendly pages for faster browsing on the go.</p>
-                            </li>
-                            <li>
-                                <h3>File Compression</h3>
-                                <p>Make your HTML and CSS files as small as possible for even faster page load speed.</p>
-                            </li>
-                            <li>
-                                <h3>Sitemap</h3>
-                                <p>tuttin auto-generates a sitemap for peak search engine efficiency.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section inner center">
-            <h2>Option-packed themes let you add your personal touch to your website</h2>
-            <p class="section-desc">Manage your page look and feel with extensive coloring, menu, social media sharing and layout options, or switch it up completely with one of our many upcoming unique themes.</p><img src="//theme-options.svg"
-                loading="lazy" alt="tuttin Theme Options" height="390" width="800" class="is-loaded">
-            <div class="features-list-icon">
-                <figure><svg aria-hidden="true" height="24" width="60"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#layout"></use></svg>
-                    <figcaption>Layout</figcaption>
-                </figure>
-                <figure><svg aria-hidden="true" height="24" width="30"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#colors"></use></svg>
-                    <figcaption>Colors</figcaption>
-                </figure>
-                <figure><svg aria-hidden="true" height="24" width="46"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#font-size"></use></svg>
-                    <figcaption>Font size</figcaption>
-                </figure>
-                <figure><svg aria-hidden="true" height="24" width="24"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#menu"></use></svg>
-                    <figcaption>Menu</figcaption>
-                </figure>
-                <figure><svg aria-hidden="true" height="24" width="24"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#search"></use></svg>
-                    <figcaption>Google Search</figcaption>
-                </figure>
-                <figure><svg aria-hidden="true" height="24" width="24"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#share-buttons"></use></svg>
-                    <figcaption>Share buttons</figcaption>
-                </figure>
-                <figure><svg aria-hidden="true" height="24" width="24"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#comments"></use></svg>
-                    <figcaption>Disqus comments</figcaption>
-                </figure>
-                <figure><svg aria-hidden="true" height="24" width="23"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#cookie"></use></svg>
-                    <figcaption>GDPR cookies</figcaption>
-                </figure>
-                <figure><svg aria-hidden="true" height="24" width="24"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#lazyload"></use></svg>
-                    <figcaption>Lazy load</figcaption>
-                </figure>
-                <figure><svg aria-hidden="true" height="24" width="33"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#post-options"></use></svg>
-                    <figcaption>Post options</figcaption>
-                </figure>
-            </div>
-        </section>
-        <section class="section dark themes">
-            <div class="inner">
-                <div>
-                    <h2>Modern, one-of-a-kind website creation tool</h2>
-                    <p class="section-desc">tuttin themes utilize the latest web technologies like a native lazy loading or responsive images to make it even faster and more flexible than its alternatives.</p>
-                    <ul class="themes-list">
-                        <li>
-                            <h3>Handlebars</h3>
-                            <p>Streamline your development workflow and build semantic templates with Handlebars support.</p>
-                        </li>
-                        <li>
-                            <h3>Semantic HTML5</h3>
-                            <p>tuttin uses semantic HTML5 for its themes so you can get to grips with its core features faster.</p>
-                        </li>
-                        <li>
-                            <h3>CSS3 + Minimal JS</h3>
-                            <p>Take advantage of the advanced styling available through CSS3, and tuttin avoids unnecessary javascript for faster, cleaner theme code.</p>
-                        </li>
-                    </ul><a href="https://tutt.in/dev/" class="btn">Get Started</a></div><img src="//theming-static-cms.png" alt="Theming Static CSS" loading="lazy" width="695"
-                    height="812" class="themes-img is-loaded"></div>
-        </section>
-        <section class="section gray community">
-            <div class="inner center">
-                <h2>Open-Source Community</h2>
-                <p class="section-desc small">tuttin may be powerful, but it's also open-source and in constant development. Come hang out with us on GitHub and report bugs, request features, or even submit your own code improvements. Our app is built for and by its users, so no matter
-                    your experience level, we want to hear from you!</p><a href="https://forum.tutt.in/" aria-label="Community Hub" title="Visit Community Hub" class="btn" rel="nofollow noopener"><svg height="24" width="32"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#community"></use></svg> Forum </a>
-                <a href="https://github.com/Gettuttin/tuttin" aria-label="Github" title="Visit Github" class="btn white" rel="nofollow noopener"><svg height="24" width="24"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#github"></use></svg> Github</a>
-            </div>
-        </section>
-        <section class="section community">
-            <div class="inner center">
-                <h2><img src="//opencollective.svg" loading="lazy" alt="tuttin on Open Collective" width="330" height="55" class="is-loaded"></h2>
-                <p class="section-desc">tuttin is part of the Open Collective; committed to being open-source and free to use. Become a backer or sponsor to help fund our app and community's growth.</p><a href="https://opencollective.com/tuttin/" aria-label="Sponsor tuttin"
-                    title="Visit tuttin on Open Collective" class="btn with-icon" rel="nofollow noopener"><svg height="24" width="24"><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#heart"></use></svg> Donate / Sponsor tuttin</a>
-                <div class="community-sponsors">
-                    <h3>Our sponsors:</h3>
-                    <a href="https://bitfalls.com/" target="_blank" rel="nofollow noopener"><img src="//bitfalls.jpeg" loading="lazy" alt="tuttin Sponsor: Bitfalls" class="is-loaded"><span>Bitfalls</span> </a>
-                    <a href="https://vpnwelt.com/" target="_blank" rel="nofollow noopener"><img src="//vpnwelt.svg" loading="lazy" alt="tuttin Sponsor: VPNwelt" class="is-loaded"><span>VPNwelt</span> </a>
-                    <a href="https://word.tips/" target="_blank" rel="nofollow noopener"><img src="//wordtips.png" loading="lazy" alt="tuttin Sponsor: Wordtips" class="is-loaded"><span>Wordtips</span></a>
-                </div>
-            </div>
-        </section>
-        <section class="section technology">
-            <div class="inner center">
-                <ul class="technology-list">
-                    <li>
-                        <h2>tuttin is built with awesome Open-Source technology:</h2>
-                    </li>
-                    <li><img src="//electron.svg" loading="lazy" width="400" alt="Electron" class="is-loaded"></li>
-                    <li><img src="//vue.svg" loading="lazy" width="150" alt="Vue" class="is-loaded"></li>
-                </ul>
-            </div>
-        </section> -->
-
-
 
     </main>
     <footer class="footer">
-        <div><a class="footer-logo" href="https://tutt.in/" aria-label="Bottom Logo"><svg><use xlink:href="https://tutt.in./assets/svg/svg-map.svg#logo"></use></svg></a>
+        <div><a class="footer-logo" href="https://tutt.in/" aria-label="Bottom Logo"><svg xmlns="http://www.w3.org/2000/svg" id="Camada_1" data-name="Camada 1" viewBox="0 0 1233 288" height="32px" class="logo" data-v-f1b18110=""><path fill="#2a4d9b" d="M193,105.14V72.22H154.92V234h36.59v41.62H54.1V234H91.34V72.22H54.1v32.92H12.47V31H234.28v74.14Z" data-v-f1b18110=""></path><path fill="#2a4d9b" d="M362.09,199.49V144.75H335.91v-40H416.4V234l30.16-.13v41.65l-84.47.13v-17.3q-25.53,16.9-49.6,16.91-24.87,0-38.7-13.83T260,223.38V144.75H234.28v-40H314v94.74C314,233.78,362.09,233.92,362.09,199.49Z" data-v-f1b18110=""></path><path fill="#2a4d9b" d="M1090.8,180.91v54.74H1117v40h-80.49V146.4l-30.16.13V104.88l84.47-.13v17.31q25.53-16.92,49.6-16.91,24.88,0,38.7,13.82T1192.92,157v78.63h25.7v40h-79.68V180.91C1138.94,146.62,1090.8,146.48,1090.8,180.91Z" data-v-f1b18110=""></path><polygon fill="#2a4d9b" points="582.84 145.65 582.84 104.97 574.67 104.97 546.15 104.97 546.15 71.91 482.67 71.91 482.67 104.97 446.03 104.97 446.03 145.64 482.67 145.64 482.62 275.56 582.84 275.56 582.84 233.93 546.25 233.93 546.25 145.64 582.84 145.65" data-v-f1b18110=""></polygon><polygon fill="#2a4d9b" points="749.65 145.65 749.65 104.97 741.47 104.97 712.96 104.97 712.96 71.91 649.48 71.91 649.48 104.97 612.84 104.97 612.84 145.64 649.48 145.64 649.43 275.56 749.65 275.56 749.65 233.93 713.06 233.93 713.06 145.64 749.65 145.65" data-v-f1b18110=""></polygon><polygon fill="#2a4d9b" points="869.52 234.82 869.52 275.49 1006.33 275.49 1006.33 234.83 969.7 234.83 969.74 104.91 869.52 104.91 869.52 146.54 906.11 146.54 906.11 234.83 869.52 234.82" data-v-f1b18110=""></polygon><path fill="#2a4d9b" d="M839.65,245.57q0,13-8.86,21.55a29.32,29.32,0,0,1-21.06,8.53,29.9,29.9,0,1,1,29.92-30.08Z" data-v-f1b18110=""></path><path fill="#2a4d9b" d="M967.93,60.92q0,13-8.86,21.55A29.33,29.33,0,0,1,938,91a29,29,0,0,1-21.22-8.87,28.93,28.93,0,0,1-8.86-21.22,28.76,28.76,0,0,1,8.86-21.06,29.65,29.65,0,0,1,42.28,0A28.76,28.76,0,0,1,967.93,60.92Z" data-v-f1b18110=""></path></svg></a>
             <ul class="footer-nav">
-                <li><a href="https://tutt.in/roadmap/">Sobre a Tuttin</a></li>
+                <li><a href="https://tutt.in/ajuda">Sobre a Tuttin</a></li>
                 <li><a href="https://tutt.in/ajuda">Fale com a Tuttin</a></li>
-                <li><a href="https://tutt.in/privacy-policy/">Politica de Privacidade</a></li>
-                <li><a href="https://tutt.in/terms-and-conditions/">Termos e Condições de Uso</a></li>
+                <li><a href="https://tutt.in/ajuda">Politica de Privacidade</a></li>
+                <li><a href="https://tutt.in/ajuda">Termos e Condições de Uso</a></li>
             </ul>
         </div>
         <div>
@@ -405,10 +413,10 @@
         <p>Este site usa cookies para garantir que você obtenha a melhor experiência em nosso site e para fornecer um recurso de comentário. Para analisar nosso tráfego, usamos a implementação básica do Google Analytics com dados anônimos. Se você continuar
             sem alterar suas configurações, assumiremos que está satisfeito em receber todos os cookies no site tuttin. Para entender mais sobre como usamos cookies ou para obter informações sobre como alterar suas configurações de cookies</b>, consulte
             nossa
-            <a href="https://tutt.in/privacy-policy/"><b> Política de Privacidade</b>.</a></p>
+            <a href="https://tutt.in/ajuda"><b> Política de Privacidade</b>.</a></p>
         <form>
             <p class="cookie-popup__save-wrapper"><button type="submit" class="cookie-popup__save">Continue</button></p>
-        </form><span class="cookie-popup-label">Cookie Policy</span></div>
+        </form><span class="cookie-popup-label">Política de Cookies</span></div>
     <script>
         (function() {
             function addScript(src, inline) {

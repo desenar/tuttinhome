@@ -656,9 +656,11 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-between;
+    gap: 10px;
     opacity: 1;
     height: 5.3333333333rem;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     position: absolute;
     top: 0;
     -webkit-transform: translate(0, 0);
@@ -679,7 +681,7 @@ textarea {
     .header {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content: space-between
+        justify-content: space-between padding: 0 2rem;
     }
 }
 
@@ -1367,6 +1369,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-self: center;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -1855,7 +1858,7 @@ textarea {
     padding: 0;
     -webkit-transition: all 0.24s ease-out;
     transition: all 0.24s ease-out;
-    width: 6.4rem
+    width: 11.4rem;
 }
 
 .cookie-popup.cookie-popup--uses-badge.cookie-popup--uses-link:hover,
@@ -2001,7 +2004,10 @@ img[loading] {
 img.is-loaded {
     opacity: 1;
     -webkit-transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -ms-transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .accordion {
@@ -2403,7 +2409,7 @@ img.is-loaded {
 
 .hero-desc-bold {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2.6vh;
     /* padding: 6px 0px 20px 0px; */
     margin: 0px;
 }
@@ -2425,15 +2431,18 @@ img.is-loaded {
 }
 
 .terms-text {
-    display: grid;
-    padding: 20px 0px;
+    padding: 30px 0px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-version {
     color: rgba(255, 255, 255, 0.75)!important;
     margin: 0px;
     padding: 0px;
-    height: 20px;
+    /* height: 20px; */
+    line-height: normal;
+    width: 38vh;
 }
 
 .hero-desc {
@@ -2441,7 +2450,7 @@ img.is-loaded {
 }
 
 .btn-gratis {
-    font-size: 26px;
+    font-size: 1.79999vh;
 }
 
 .logo-img {
@@ -2477,4 +2486,25 @@ img.is-loaded {
 
 .bg-blue {
     background-color: #1a83e4;
+}
+
+.textemonial-txt-t {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.testemunial-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.testemunial-img-cicle {
+    border-radius: 40px;
+    height: 70px;
+    width: 70px;
 }
